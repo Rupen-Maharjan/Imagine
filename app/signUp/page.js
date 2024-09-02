@@ -3,7 +3,7 @@ import { Socials, SignupForm } from "@/components/export";
 import { useSession } from 'next-auth/react'
 import { redirect } from 'next/navigation'
 
-const signUp = () => {
+const SignUp = () => {
   const { data: session } = useSession()
 
   session && redirect("/")
@@ -23,4 +23,4 @@ const signUp = () => {
   );
 };
 
-export default signUp;
+export default SignUp;
